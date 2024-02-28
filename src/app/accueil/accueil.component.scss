@@ -1,0 +1,39 @@
+.accueil {
+    position: relative;
+    background-image: url('../../assets/fondportfolio.png');
+    min-width: 100%!important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-size: 100% 100%; /* Utilisez cette propriété pour ajuster la taille de l'image */
+  }
+  
+.accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(60%) grayscale(20%);
+}
+  
+  .accueil h4, p{
+    position: relative;
+    z-index: 1;
+    /* Ajoutez d'autres styles au besoin */
+  }
+  
+  .accueil a{
+    margin-top: 10px!important;
+  }
+  
+  
+    a{
+      border-color: transparent!important;
+    }

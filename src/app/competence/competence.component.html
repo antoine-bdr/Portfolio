@@ -1,0 +1,73 @@
+<div class="competence">
+    <div class="row">
+        <div class="container left'align">
+            <div class="col s12">
+                <div class="titre">Langages:</div>
+            </div>
+        </div>
+        <div class="container center-align">
+            <div class="col s2" *ngFor="let competence of competences">
+                <div *ngIf="competence.catergorie == 'code'">
+                    <img [src]="competence.icon" alt="{{ competence.title }}" />
+                    <p style="margin: 0px!important;">{{ competence.title }}</p>
+                    <div class="notation">
+                        <span *ngFor="let star of [1, 2, 3, 4, 5]">
+                          {{ star <= competence.note ? '★' : '☆' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container left'align">
+            <div class="col s8">
+                <div class="titre">Framework:</div>
+            </div>
+        </div>
+        <div class="container left'align">
+            <div class="col s4">
+                <div class="titre">Base de données:</div>
+            </div>
+        </div>
+        <div class="container center-align">
+            <div class="col s2" *ngFor="let competence of competences">
+                <div *ngIf="competence.catergorie == 'framework'">
+                    <img [src]="competence.icon" alt="{{ competence.title }}" />
+                    <p style="margin: 0px!important;">{{ competence.title }}</p>
+                    <div class="notation">
+                        <span *ngFor="let star of [1, 2, 3, 4, 5]">
+                          {{ star <= competence.note ? '★' : '☆' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container center-align">
+            <div class="col s2" *ngFor="let competence of competences">
+                <div *ngIf="competence.catergorie == 'bdd'">
+                    <img [src]="competence.icon" alt="{{ competence.title }}" />
+                    <p style="margin: 0px!important;">{{ competence.title }}</p>
+                    <div class="notation">
+                        <span *ngFor="let star of [1, 2, 3, 4, 5]">
+                          {{ star <= competence.note ? '★' : '☆' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container center-align">
+            <div class="col s2" *ngFor="let competence of competences">
+                <div *ngIf="competence.catergorie == 'langue'">
+                    <img [src]="competence.icon" alt="{{ competence.title }}" />
+                    <p style="margin: 0px!important;">{{ competence.title }}</p>
+                    <div class="notation">
+                        <span *ngFor="let star of [1, 2, 3, 4, 5]">
+                          {{ star <= competence.note ? '★' : '☆' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

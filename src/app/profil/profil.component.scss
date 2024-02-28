@@ -1,0 +1,21 @@
+.formation {
+    height: 375px;
+    background-color: #1a0a24;
+}
+
+.profil {
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+
+/* Ajoutez cette règle pour ajouter un espace entre les colonnes */
+.col.s6 {
+    padding: 15px!important; /* Ajustez la valeur selon l'espace souhaité */
+}
+
+.rounded {
+    border-radius: 10%;
+    overflow: hidden; /* Assurez-vous que le contenu est bien contenu dans la zone arrondie */
+}
+
